@@ -22,6 +22,13 @@
 .purple{
     color: rgba(93, 88, 239, 1);
 }
+.section-title{
+    color: rgb(0, 0, 0);
+    font-size: 46px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px;
+}
 
 /* header styles */
 
@@ -73,6 +80,7 @@
 }
 .fa-bars{
     display: none;
+    text-decoration: none;
 }
 
 /* hero section */
@@ -115,7 +123,116 @@
     height: 575px;
 }
 
+/* curriculum section */
+.curriculum-section{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.curriculum-bg{
+    position: absolute;
+
+}
+.all-items{
+    position: relative;
+    margin-top: 60px;
+}
+.curriculum{
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    margin: 80px 0px;
+
+}
+.curriculum-1{
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    width: 367.8px;
+    text-align: center;
+    padding: 58px 40px;
+}
+.curriculum-2{
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    width: 367.8px;
+    text-align: center;
+    padding: 58px 40px;
+}
+.curriculum-3{
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    width: 367.8px;
+    text-align: center;
+    padding: 58px 40px;
+}
+.curriculum-img{
+    width: 136.76px;
+    height: 136.76px;
+    margin-bottom: 0px;
+}
+.curriculum-title{
+    color: rgb(32, 32, 32);
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 32px;
+
+}
+.curriculum-p{
+    color: rgb(128, 128, 128);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 34px 0px;
+}
+.curriculum-a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.arrow{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 0px;
+}
+.fa-chevron-left{
+    background: rgb(254, 163, 1);
+    color: rgb(255, 255, 255);;
+    padding: 22px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.fa-chevron-right{
+    background: rgb(254, 163, 1);
+    color: rgb(255, 255, 255);;
+    padding: 22px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* stories section */
+
+
+
+
+
+
 @media screen and (max-width: 576px) {
+
+/* responsive shared section     */
+.section-title{
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px;
+}
 
 /* responsive navbar */
 .nav-bar{
@@ -135,7 +252,8 @@
     display: none;
 }
 .fa-bars{
-    display: active;
+    display: flex;
+    color: rgba(17, 17, 17, 1);
     width: 22.5px;
     height: 15px;
 }
@@ -180,5 +298,60 @@
     width: 100%;
     height: 100%;
 }
+
+/* responsive curriculum section */
+.curriculum-section{
+    max-width: 100%;
+    margin: 18px;
+}
+.curriculum-bg{
+    width: 90%;
+    position: absolute;
+}
+.all-items{
+    position: relative;
+    margin-top: 40px;
+}
+.curriculum{
+    display: block;
+    margin: 20px 0px;
+}
+.curriculum-1{
+    border: 0.64px solid rgb(222, 245, 255);
+    border-radius: 12.77px;
+    box-shadow: inset 0px 0px 19.16px 0.64px rgba(0, 0, 0, 0.05);
+    padding: 38px 28px;
+    width: auto;
+}
+.curriculum-2{
+    border: 0.64px solid rgb(255, 244, 220);
+    border-radius: 12.77px;   
+    box-shadow: inset 0px 0px 19.16px 0.64px rgba(0, 0, 0, 0.05);
+    padding: 38px 28px;
+    width: auto;
+    margin: 12px 0px;
+}
+.curriculum-3{
+    border: 0.64px solid rgb(242, 232, 255);
+    border-radius: 12.77px;   
+    box-shadow: inset 0px 0px 19.16px 0.64px rgba(0, 0, 0, 0.05);
+    padding: 38px 28px;
+    width: auto;
+}
+.curriculum-img{
+    width: 93.05px;
+    height: 84.42px;
+}
+.curriculum-title{
+    font-size: 16px;
+}
+.curriculum-p, .curriculum-a{
+    font-size: 10px;
+}
+.arrow, .fa-chevron-left, .fa-chevron-right{
+    display: none;
+}
+
+/* stories section */
 
 }
